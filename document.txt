@@ -1,0 +1,8 @@
+npm install express -> dùng express backend
+npm i mongoose -> kế nồi express với mongDB
+npm i cors -> ngăn chặn corsOrigin của trình duyệt
+npm i dotenv -> dùng file .env
+npm i bcrypt -> mã hoá password
+npm i cookie-parser -> dùng cookie
+npm i jsonwebtoken -> Auth xác nhận người dùng
+npm i nodemon -> auto chạy lại 
