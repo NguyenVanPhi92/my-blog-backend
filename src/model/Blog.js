@@ -21,7 +21,7 @@ const BlogScheme = new mongoose.Schema({
     default: new Date().toLocaleDateString("en-Us"),
   },
   user: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId || String,
     ref: "User",
     required: true,
   },

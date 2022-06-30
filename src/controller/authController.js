@@ -24,7 +24,7 @@ const authController = {
       if (error.code === 11000) {
         return res
           .status(500)
-          .json({ message: "username, phone number or password exists" });
+          .json({ message: "username, phone number or email exists" });
       }
       res.status(500).json({ message: error.message });
     }

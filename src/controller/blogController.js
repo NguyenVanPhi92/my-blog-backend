@@ -35,6 +35,18 @@ const postController = {
       res.status(500).json(error);
     }
   },
+
+  updateArticle: async (req, res) => {
+    const id = req.params.id;
+    const { title, content, category, image } = req.body;
+
+    try {
+      await Blog.findByIdAndUpdate(id, { title, content, category, image });
+      res.status(200).json("update success");
+    } catch (error) {
+      res.status(400).json(error.message);
+    }
+  },
 };
 
 module.exports = postController;
